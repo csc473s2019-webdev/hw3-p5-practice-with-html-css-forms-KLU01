@@ -25,7 +25,8 @@
         label[for="improvement"]#improv-label{Things that should be improved (Check all that apply):}+
         ul>li*4>label>input[name="preference" type="checkbox" value=$]+
         label[for="comment"].comment-label{Enter additional comments and suggestions:}+
-            textarea#comments[placeholder="Enter your comment here..."]
+        textarea#comments[placeholder="Enter your comment here..."]+
+        button#submit[type="submit"]{Submit}
         ... -->
   <form action="" id="survey-form">
     <label for="name" id="name-label">* Name:</label>
@@ -58,6 +59,7 @@
     </ul>
     <label for="comment" class="comment-label">Enter additional comments and suggestions:</label>
     <textarea name="" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+    <button id="submit" type="submit">Submit</button>
   </form>
 </body>
 </html>
