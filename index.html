@@ -11,6 +11,21 @@
   <h1 id="title">Survey Form</h1>
   <!-- p#description{txt} -->
   <p id="description">Let us know how we can improve this form.</p>
-
+  <!-- form#survey-form>
+        label#name-label[for="name"]{* Name:}+
+        input#name[placeholder="Enter your name"]+
+        label#email-label[for="email" placeholder="Enter your E-mail"]{* E-mail:}+
+        input[type="email"]#email+
+        label[for="age"]#number-label{* Age:}+
+        input#number[type="number" min="1" max="125" placeholder="Age"]+
+        ... -->
+  <form action="" id="survey-form">
+    <label for="name" id="name-label">* Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <label for="email" id="email-label">* E-mail:</label>
+    <input type="email" id="email" placeholder="Enter your E-mail">
+    <label for="age" id="number-label">* Age:</label>
+    <input type="number" id="number" min="1" max="125" placeholder="Age">
+  </form>
 </body>
 </html>
