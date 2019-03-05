@@ -21,7 +21,9 @@
         label[for="currentRole"]#dropdown-label{Which option best describes your current role?}+
         select#dropdown>option*6+
         label[for="rating"]#rate-label{How much do you like this form experience?}+
-        ul>li*3>label>input[name="radio-buttons" type="radio" value=$]
+        ul>li*3>label>input[name="radio-buttons" type="radio" value=$]+
+        label[for="improvement"]#improv-label{Things that should be improved (Check all that apply):}+
+        ul>li*4>label>input[name="preference" type="checkbox" value=$]
         ... -->
   <form action="" id="survey-form">
     <label for="name" id="name-label">* Name:</label>
@@ -44,6 +46,13 @@
       <li><label>Very much<input type="radio" name="radio-buttons" value="1"></label></li>
       <li><label>It's okay<input type="radio" name="radio-buttons" value="2"></label></li>
       <li><label>Hate it<input type="radio" name="radio-buttons" value="3"></label></li>
+    </ul>
+    <label for="improvement" id="improv-label">Things that should be improved (Check all that apply):</label>
+    <ul>
+      <li><label>Front-end<input type="checkbox" name="preference" value="1"></label></li>
+      <li><label>Back-end<input type="checkbox" name="preference" value="2"></label></li>
+      <li><label>More options<input type="checkbox" name="preference" value="3"></label></li>
+      <li><label>Looks<input type="checkbox" name="preference" value="4"></label></li>
     </ul>
   </form>
 </body>
