@@ -5,61 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- h1#title{Survey Form} -->
   <h1 id="title">Survey Form</h1>
-  <!-- p#description{txt} -->
-  <p id="description">Let us know how we can improve this form.</p>
-  <!-- form#survey-form>
-        label#name-label[for="name"]{* Name:}+
-        input#name[placeholder="Enter your name"]+
-        label#email-label[for="email" placeholder="Enter your E-mail"]{* E-mail:}+
-        input[type="email"]#email+
-        label[for="age"]#number-label{* Age:}+
-        input#number[type="number" min="1" max="125" placeholder="Age"]+
-        label[for="currentRole"]#dropdown-label{Which option best describes your current role?}+
-        select#dropdown>option*6+
-        label[for="rating"]#rate-label{How much do you like this form experience?}+
-        ul>li*3>label>input[name="radio-buttons" type="radio" value=$]+
-        label[for="improvement"]#improv-label{Things that should be improved (Check all that apply):}+
-        ul>li*4>label>input[name="preference" type="checkbox" value=$]+
-        label[for="comment"].comment-label{Enter additional comments and suggestions:}+
-        textarea#comments[placeholder="Enter your comment here..."]+
-        button#submit[type="submit"]{Submit}
-        ... -->
-  <form action="" id="survey-form">
-    <label for="name" id="name-label">* Name:</label>
-    <input type="text" id="name" placeholder="Enter your name">
-    <label for="email" id="email-label">* E-mail:</label>
-    <input type="email" id="email" placeholder="Enter your E-mail">
-    <label for="age" id="number-label">* Age:</label>
-    <input type="number" id="number" min="1" max="125" placeholder="Age">
-    <label for="currentRole" id="dropdown-label">Which option best describes your current role?</label>
-    <select name="" id="dropdown">
-      <option disabled value="Select an option"></option>
-      <option value="student">Student</option>
-      <option value="job">Full-time Job</option>
-      <option value="learner">Full-time Learner</option>
-      <option value="preferNo">Prefer not to say</option>
-      <option value="other">Other</option>
-    </select>
-    <label for="rating" id="rate-label">How much do you like this form experience?</label>
-    <ul>
-      <li><label>Very much<input type="radio" name="radio-buttons" value="1"></label></li>
-      <li><label>It's okay<input type="radio" name="radio-buttons" value="2"></label></li>
-      <li><label>Hate it<input type="radio" name="radio-buttons" value="3"></label></li>
-    </ul>
-    <label for="improvement" id="improv-label">Things that should be improved (Check all that apply):</label>
-    <ul>
-      <li><label>Front-end<input type="checkbox" name="preference" value="1"></label></li>
-      <li><label>Back-end<input type="checkbox" name="preference" value="2"></label></li>
-      <li><label>More options<input type="checkbox" name="preference" value="3"></label></li>
-      <li><label>Looks<input type="checkbox" name="preference" value="4"></label></li>
-    </ul>
-    <label for="comment" class="comment-label">Enter additional comments and suggestions:</label>
-    <textarea name="" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
-    <button id="submit" type="submit">Submit</button>
-  </form>
+  <div class="form-outer">
+    <!-- p#description{txt} -->
+    <p id="description">Let us know how we can improve this form.</p>
+    <!-- form#survey-form>
+          label#name-label[for="name"]{* Name:}+
+          input#name[placeholder="Enter your name"]+
+          label#email-label[for="email" placeholder="Enter your E-mail"]{* E-mail:}+
+          input[type="email"]#email+
+          label[for="age"]#number-label{* Age:}+
+          input#number[type="number" min="1" max="125" placeholder="Age"]+
+          label[for="currentRole"]#dropdown-label{Which option best describes your current role?}+
+          select#dropdown>option*6+
+          label[for="rating"]#rate-label{How much do you like this form experience?}+
+          ul>li*3>label>input[name="radio-buttons" type="radio" value=$]+
+          label[for="improvement"]#improv-label{Things that should be improved (Check all that apply):}+
+          ul>li*4>label>input[name="preference" type="checkbox" value=$]+
+          label[for="comment"].comment-label{Enter additional comments and suggestions:}+
+          textarea#comments[placeholder="Enter your comment here..."]+
+          button#submit[type="submit"]{Submit}
+          ... -->
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">* Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <label for="email" id="email-label">* E-mail:</label>
+      <input type="email" id="email" placeholder="Enter your E-mail">
+      <label for="age" id="number-label">* Age:</label>
+      <input type="number" id="number" min="1" max="125" placeholder="Age">
+      <label for="currentRole" id="dropdown-label">Which option best describes your current role?</label>
+      <select name="" id="dropdown">
+        <option disabled value="Select an option"></option>
+        <option value="student">Student</option>
+        <option value="job">Full-time Job</option>
+        <option value="learner">Full-time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="rating" id="rate-label">How much do you like this form experience?</label>
+      <ul>
+        <li><label>Very much<input type="radio" name="radio-buttons" value="1"></label></li>
+        <li><label>It's okay<input type="radio" name="radio-buttons" value="2"></label></li>
+        <li><label>Hate it<input type="radio" name="radio-buttons" value="3"></label></li>
+      </ul>
+      <label for="improvement" id="improv-label">Things that should be improved (Check all that apply):</label>
+      <ul>
+        <li><label>Front-end<input type="checkbox" name="preference" value="1"></label></li>
+        <li><label>Back-end<input type="checkbox" name="preference" value="2"></label></li>
+        <li><label>More options<input type="checkbox" name="preference" value="3"></label></li>
+        <li><label>Looks<input type="checkbox" name="preference" value="4"></label></li>
+      </ul>
+      <label for="comment" class="comment-label">Enter additional comments and suggestions:</label>
+      <textarea name="" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 </html>
