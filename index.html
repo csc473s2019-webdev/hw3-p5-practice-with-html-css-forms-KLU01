@@ -18,8 +18,10 @@
         input[type="email"]#email+
         label[for="age"]#number-label{* Age:}+
         input#number[type="number" min="1" max="125" placeholder="Age"]+
-        label[for="currentRole"]{Which option best describes your current role?}+
-        select#dropdown>option*6
+        label[for="currentRole"]#dropdown-label{Which option best describes your current role?}+
+        select#dropdown>option*6+
+        label[for="rating"]#rate-label{How much do you like this form experience?}+
+        ul>li*3>label>input[name="radio-buttons" type="radio" value=$]
         ... -->
   <form action="" id="survey-form">
     <label for="name" id="name-label">* Name:</label>
@@ -28,7 +30,7 @@
     <input type="email" id="email" placeholder="Enter your E-mail">
     <label for="age" id="number-label">* Age:</label>
     <input type="number" id="number" min="1" max="125" placeholder="Age">
-    <label for="currentRole">Which option best describes your current role?</label>
+    <label for="currentRole" id="dropdown-label">Which option best describes your current role?</label>
     <select name="" id="dropdown">
       <option disabled value="Select an option"></option>
       <option value="student">Student</option>
@@ -37,6 +39,12 @@
       <option value="preferNo">Prefer not to say</option>
       <option value="other">Other</option>
     </select>
+    <label for="rating" id="rate-label">How much do you like this form experience?</label>
+    <ul>
+      <li><label>Very much<input type="radio" name="radio-buttons" value="1"></label></li>
+      <li><label>It's okay<input type="radio" name="radio-buttons" value="2"></label></li>
+      <li><label>Hate it<input type="radio" name="radio-buttons" value="3"></label></li>
+    </ul>
   </form>
 </body>
 </html>
