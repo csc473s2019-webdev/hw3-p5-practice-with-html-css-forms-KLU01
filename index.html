@@ -18,6 +18,8 @@
         input[type="email"]#email+
         label[for="age"]#number-label{* Age:}+
         input#number[type="number" min="1" max="125" placeholder="Age"]+
+        label[for="currentRole"]{Which option best describes your current role?}+
+        select#dropdown>option*6
         ... -->
   <form action="" id="survey-form">
     <label for="name" id="name-label">* Name:</label>
@@ -26,6 +28,15 @@
     <input type="email" id="email" placeholder="Enter your E-mail">
     <label for="age" id="number-label">* Age:</label>
     <input type="number" id="number" min="1" max="125" placeholder="Age">
+    <label for="currentRole">Which option best describes your current role?</label>
+    <select name="" id="dropdown">
+      <option disabled value="Select an option"></option>
+      <option value="student">Student</option>
+      <option value="job">Full-time Job</option>
+      <option value="learner">Full-time Learner</option>
+      <option value="preferNo">Prefer not to say</option>
+      <option value="other">Other</option>
+    </select>
   </form>
 </body>
 </html>
